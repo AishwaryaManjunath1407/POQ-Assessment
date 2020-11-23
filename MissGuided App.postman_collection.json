@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "9d49cf9a-e257-4a82-b775-d2bdcc538c19",
+		"name": "MissGuided App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login - Success Scenario",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "mxq1t45bztibn5f3ua4iavc90877u8fr6609iv1hxpa9milyy7n029z44ov130y7",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wy9209t09mlaxvq8by2kt4usgv0q8qk6wtjr9imk8gi59qnqh9v9tyiq83z9952k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"timestamp\": 1606160802.4927721,\r\n\t\"customer_ids\": {\r\n\t\t\"cookie\": \"8EF80E06-2F26-4724-A3C4-A978747C64E6\",\r\n\t\t\"email_id\": \"95e4000cf39d4cb869f1df73d58d081d63410a61332ed5ab979c99bfa00d2bec\"\r\n\t},\r\n\t\"properties\": {\r\n\t\t\"userId\": \"08D3EEFE-3499-4FF9-AA35-5A8F7E3958D9\"\r\n\t},\r\n\t\"event_type\": \"login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-analytics.missguided.com/track/v2/projects/1a13834a-88a7-11e7-a6e4-305a3a75dd9b/customers/events",
+					"protocol": "https",
+					"host": [
+						"api-analytics",
+						"missguided",
+						"com"
+					],
+					"path": [
+						"track",
+						"v2",
+						"projects",
+						"1a13834a-88a7-11e7-a6e4-305a3a75dd9b",
+						"customers",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - Empty Password",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wy9209t09mlaxvq8by2kt4usgv0q8qk6wtjr9imk8gi59qnqh9v9tyiq83z9952k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"timestamp\": 1606160802.4927721,\r\n\t\"customer_ids\": {\r\n\t\t\"cookie\": \"8EF80E06-2F26-4724-A3C4-A978747C64E6\",\r\n\t\t\"email_id\": \"95e4000cf39d4cb869f1df73d58d081d63410a61332ed5ab979c99bfa00d2bec\"\r\n\t},\r\n\t\"properties\": {\r\n\t\t\"userId\": \"08D3EEFE-3499-4FF9-AA35-5A8F7E3958D9\"\r\n\t},\r\n\t\"event_type\": \"login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-analytics.missguided.com/track/v2/projects/1a13834a-88a7-11e7-a6e4-305a3a75dd9b/customers/events",
+					"protocol": "https",
+					"host": [
+						"api-analytics",
+						"missguided",
+						"com"
+					],
+					"path": [
+						"track",
+						"v2",
+						"projects",
+						"1a13834a-88a7-11e7-a6e4-305a3a75dd9b",
+						"customers",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - Empty Username",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "mxq1t45bztibn5f3ua4iavc90877u8fr6609iv1hxpa9milyy7n029z44ov130y7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"timestamp\": 1606160802.4927721,\r\n\t\"customer_ids\": {\r\n\t\t\"cookie\": \"8EF80E06-2F26-4724-A3C4-A978747C64E6\",\r\n\t\t\"email_id\": \"95e4000cf39d4cb869f1df73d58d081d63410a61332ed5ab979c99bfa00d2bec\"\r\n\t},\r\n\t\"properties\": {\r\n\t\t\"userId\": \"08D3EEFE-3499-4FF9-AA35-5A8F7E3958D9\"\r\n\t},\r\n\t\"event_type\": \"login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-analytics.missguided.com/track/v2/projects/1a13834a-88a7-11e7-a6e4-305a3a75dd9b/customers/events",
+					"protocol": "https",
+					"host": [
+						"api-analytics",
+						"missguided",
+						"com"
+					],
+					"path": [
+						"track",
+						"v2",
+						"projects",
+						"1a13834a-88a7-11e7-a6e4-305a3a75dd9b",
+						"customers",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register - Success Scenario",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "poq-auth",
+						"value": "MqAzxb6N5lzHjg7AmFYilRhZQ4LpzCpm2IPz9/uZB8M=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"credentials\": {\r\n\t\t\"username\": \"esfdsafg@gmail.com\",\r\n\t\t\"password\": \"Robert123$\"\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"encryptedPassword\": \"Robert123$\",\r\n\t\t\"email\": \"esfdsafg@gmail.com\",\r\n\t\t\"isPromotion\": true,\r\n\t\t\"lastName\": \"Gzsfds\",\r\n\t\t\"firstName\": \"sdfas\"\r\n\t},\r\n\t\"isPromotion\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://missguided.poq.io/account/register/76/C70F9C58-2894-43D4-AB0D-5F46B996A428",
+					"protocol": "https",
+					"host": [
+						"missguided",
+						"poq",
+						"io"
+					],
+					"path": [
+						"account",
+						"register",
+						"76",
+						"C70F9C58-2894-43D4-AB0D-5F46B996A428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register - Trying to register already existing user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "poq-auth",
+						"value": "MqAzxb6N5lzHjg7AmFYilRhZQ4LpzCpm2IPz9/uZB8M=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"credentials\": {\r\n\t\t\"username\": \"esfdsafg@gmail.com\",\r\n\t\t\"password\": \"Robert123$\"\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"encryptedPassword\": \"Robert123$\",\r\n\t\t\"email\": \"esfdsafg@gmail.com\",\r\n\t\t\"isPromotion\": true,\r\n\t\t\"lastName\": \"Gzsfds\",\r\n\t\t\"firstName\": \"sdfas\"\r\n\t},\r\n\t\"isPromotion\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://missguided.poq.io/account/register/76/C70F9C58-2894-43D4-AB0D-5F46B996A428",
+					"protocol": "https",
+					"host": [
+						"missguided",
+						"poq",
+						"io"
+					],
+					"path": [
+						"account",
+						"register",
+						"76",
+						"C70F9C58-2894-43D4-AB0D-5F46B996A428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register - Trying to register with invalid Email ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "poq-auth",
+						"value": "MqAzxb6N5lzHjg7AmFYilRhZQ4LpzCpm2IPz9/uZB8M=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"credentials\": {\r\n\t\t\"username\": \"abc123\",\r\n\t\t\"password\": \"Robert123$\"\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"encryptedPassword\": \"Robert123$\",\r\n\t\t\"email\": \"abc123\",\r\n\t\t\"isPromotion\": true,\r\n\t\t\"lastName\": \"Gzsfds\",\r\n\t\t\"firstName\": \"sdfas\"\r\n\t},\r\n\t\"isPromotion\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://missguided.poq.io/account/register/76/C70F9C58-2894-43D4-AB0D-5F46B996A428",
+					"protocol": "https",
+					"host": [
+						"missguided",
+						"poq",
+						"io"
+					],
+					"path": [
+						"account",
+						"register",
+						"76",
+						"C70F9C58-2894-43D4-AB0D-5F46B996A428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout - Success Scenario",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "mxq1t45bztibn5f3ua4iavc90877u8fr6609iv1hxpa9milyy7n029z44ov130y7",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wy9209t09mlaxvq8by2kt4usgv0q8qk6wtjr9imk8gi59qnqh9v9tyiq83z9952k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"properties\": {\r\n\t\t\"sdk_version\": \"1.1.8\",\r\n\t\t\"duration\": 35.941793918609619,\r\n\t\t\"app_version\": \"17.1.2\",\r\n\t\t\"os_name\": \"iOS\",\r\n\t\t\"sdk\": \"Exponea iOS SDK\",\r\n\t\t\"device_model\": \"iPhone\",\r\n\t\t\"device_type\": \"mobile\",\r\n\t\t\"os_version\": \"13.6.1\"\r\n\t},\r\n\t\"event_type\": \"session_end\",\r\n\t\"customer_ids\": {\r\n\t\t\"cookie\": \"307E4B99-071E-44F6-86A1-0EFD57B417DE\"\r\n\t},\r\n\t\"timestamp\": 1606166971.116859\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-analytics.missguided.com/track/v2/projects/1a13834a-88a7-11e7-a6e4-305a3a75dd9b/customers/events",
+					"protocol": "https",
+					"host": [
+						"api-analytics",
+						"missguided",
+						"com"
+					],
+					"path": [
+						"track",
+						"v2",
+						"projects",
+						"1a13834a-88a7-11e7-a6e4-305a3a75dd9b",
+						"customers",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout - Empty Customer ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "mxq1t45bztibn5f3ua4iavc90877u8fr6609iv1hxpa9milyy7n029z44ov130y7",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wy9209t09mlaxvq8by2kt4usgv0q8qk6wtjr9imk8gi59qnqh9v9tyiq83z9952k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"properties\": {\r\n\t\t\"sdk_version\": \"1.1.8\",\r\n\t\t\"duration\": 35.941793918609619,\r\n\t\t\"app_version\": \"17.1.2\",\r\n\t\t\"os_name\": \"iOS\",\r\n\t\t\"sdk\": \"Exponea iOS SDK\",\r\n\t\t\"device_model\": \"iPhone\",\r\n\t\t\"device_type\": \"mobile\",\r\n\t\t\"os_version\": \"13.6.1\"\r\n\t},\r\n\t\"event_type\": \"session_end\",\r\n\t\"customer_ids\": {\r\n\t\t\"cookie\": \"\"\r\n\t},\r\n\t\"timestamp\": 1606166971.116859\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-analytics.missguided.com/track/v2/projects/1a13834a-88a7-11e7-a6e4-305a3a75dd9b/customers/events",
+					"protocol": "https",
+					"host": [
+						"api-analytics",
+						"missguided",
+						"com"
+					],
+					"path": [
+						"track",
+						"v2",
+						"projects",
+						"1a13834a-88a7-11e7-a6e4-305a3a75dd9b",
+						"customers",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout -Tryin to logout Multiple Customer IDs",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "mxq1t45bztibn5f3ua4iavc90877u8fr6609iv1hxpa9milyy7n029z44ov130y7",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wy9209t09mlaxvq8by2kt4usgv0q8qk6wtjr9imk8gi59qnqh9v9tyiq83z9952k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"properties\": {\r\n\t\t\"sdk_version\": \"1.1.8\",\r\n\t\t\"duration\": 35.941793918609619,\r\n\t\t\"app_version\": \"17.1.2\",\r\n\t\t\"os_name\": \"iOS\",\r\n\t\t\"sdk\": \"Exponea iOS SDK\",\r\n\t\t\"device_model\": \"iPhone\",\r\n\t\t\"device_type\": \"mobile\",\r\n\t\t\"os_version\": \"13.6.1\"\r\n\t},\r\n\t\"event_type\": \"session_end\",\r\n\t\"customer_ids\": {\r\n\t\t\"cookie\": \"307E4B99-071E-44F6-86A1-0EFD57B417DE, D88B729-D565-4B03-9364-8E512D99B157\"\r\n\t},\r\n\t\"timestamp\": 1606166971.116859\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-analytics.missguided.com/track/v2/projects/1a13834a-88a7-11e7-a6e4-305a3a75dd9b/customers/events",
+					"protocol": "https",
+					"host": [
+						"api-analytics",
+						"missguided",
+						"com"
+					],
+					"path": [
+						"track",
+						"v2",
+						"projects",
+						"1a13834a-88a7-11e7-a6e4-305a3a75dd9b",
+						"customers",
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
